@@ -7,6 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
 ARG BUILD_ARCH=armv7
+RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf
 RUN \
     apk add --no-cache \
         ip6tables=1.8.7-r1 \
