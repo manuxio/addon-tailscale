@@ -6,7 +6,7 @@ FROM ${BUILD_FROM}
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
-ARG BUILD_ARCH=amd64
+ARG BUILD_ARCH=armv7
 RUN \
     apk add --no-cache \
         ip6tables=1.8.7-r1 \
