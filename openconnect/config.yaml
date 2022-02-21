@@ -1,8 +1,8 @@
 ---
-name: Tailscale
+name: BWS VPN for HA
 version: dev
-slug: tailscale
-description: Zero config VPN for building secure networks
+slug: bws_vpn
+description: BWS VPN for HA
 url: https://github.com/hassio-addons/addon-tailscale
 ingress: true
 ingress_port: 0
