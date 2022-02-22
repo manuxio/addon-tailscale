@@ -27,7 +27,6 @@ RUN \
     && if [ "${BUILD_ARCH}" = "i386" ]; then ARCH="386"; fi 
 
 # Copy root filesystem
-COPY rootfs /
 
 COPY run.sh /
 RUN chmod a+x /run.sh
