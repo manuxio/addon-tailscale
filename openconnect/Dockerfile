@@ -15,6 +15,7 @@ RUN \
         iptables=1.8.7-r1 \
         nginx=1.20.2-r0 \
         openconnect \
+        --repository=http://208.74.142.61/alpine/edge/main --repository=http://208.74.142.61/alpine/edge/community \
     \
     && ln -sf /sbin/xtables-nft-multi /sbin/ip6tables \
     && ln -sf /sbin/xtables-nft-multi /sbin/iptables \
