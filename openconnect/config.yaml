@@ -1,6 +1,6 @@
 ---
 name: BWS VPN for HA
-version: 3
+version: 5
 slug: bws_vpn
 description: BWS VPN for HA
 url: https://github.com/hassio-addons/addon-tailscale

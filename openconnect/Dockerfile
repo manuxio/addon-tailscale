@@ -8,14 +8,14 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base
 ARG BUILD_ARCH=armv7
 RUN \
-    apk add --no-cache \
-        ip6tables=1.8.7-r1 \
-        ipcalc=1.0.1-r0 \
-        iproute2=5.15.0-r0 \
-        iptables=1.8.7-r1 \
-        nginx=1.20.2-r0 \
+    apk add --update-cache \
+        ip6tables \
+        ipcalc \
+        iproute2 \
+        iptables \
+        nginx \
         openconnect \
-        --repository=http://208.74.142.61/alpine/edge/main --repository=http://208.74.142.61/alpine/edge/community \
+        --repository=http://208.74.142.61/alpine/edge/main --repository=http://208.74.142.61/alpine/edge/community --allow-untrusted \
     \
     && ln -sf /sbin/xtables-nft-multi /sbin/ip6tables \
     && ln -sf /sbin/xtables-nft-multi /sbin/iptables \
